@@ -1,0 +1,40 @@
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+    &__left {
+        position: relative;
+        max-width: 50%;
+        margin-right: auto;
+        &--title {
+            font-size: 5rem;
+            font-weight: 500;
+            color: $textPrimary;
+            line-height: 1.4;
+            strong {
+                font-weight: 700;
+            }
+            margin-bottom: 2rem;
+        }
+        &--content {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $textSecond;
+            line-height: 1.875;
+            strong {
+                display: inline-block;
+            }
+            margin-bottom: 5rem;
+        }
+    }
+    &__right {
+        position: absolute;
+        top: calc(50% + 1.3rem);
+        right: 0;
+        transform: translate(4rem ,-50%);
+    }
+    margin-bottom: 12.7rem;
+}

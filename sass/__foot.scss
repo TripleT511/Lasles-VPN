@@ -1,0 +1,101 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background: $footer;
+    padding-bottom: 8rem;
+    &__subs {
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5.85rem 7rem;
+        background: $white;
+        border-radius: 1rem;
+        z-index: 10;
+        &--title {
+            span {
+                display: block;
+                font-size: 3.5rem;
+                font-weight: 500;
+                line-height: 1.1;
+                color: $textPrimary;
+            }
+            p {
+                margin-top: 2rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1;
+                color: $textSecond;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        top: -4.9rem;
+        display: flex;
+        justify-content: space-between;
+        .footer__left {
+            .footer-des__img {
+                margin-bottom: 2rem;
+            }
+            color: $textSecond;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: calc(30 / 16);
+            strong {
+                    font-weight: 500;
+            }
+            span {
+                margin-top: 3rem;
+                display: block;
+                color: #AFB5C0;
+            }
+            ul {
+                margin-top: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2rem;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3.36rem;
+                    height: 3.36rem;
+                    border-radius: 50%;
+                    background: $white;
+                    box-shadow: 0 1.3rem 1.8rem rgba(17, 19, 35, 0.08);
+                    a {
+                        display: block;
+                        color: $red;
+                    }
+                    cursor: pointer;
+                }
+            }
+        }
+        .footer___right {
+            display: flex;
+            flex-direction: row;
+            gap: 12.6rem;
+            .footer-title {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: calc(30 / 18);
+                color: $textPrimary;
+                margin-bottom: 2rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .footer-item a {
+                    display: block;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: calc(30 / 16);
+                    color: $textSecond;
+                }
+            }
+        }
+    }
+}
