@@ -30,11 +30,14 @@
             margin-bottom: 5rem;
         }
     }
-    &__right {
+    margin-bottom: 12.7rem;
+}
+
+@media screen and (min-width: 1280px ) {
+    .banner__right {
         position: absolute;
         top: calc(50% + 1.3rem);
         right: 0;
         transform: translate(4rem ,-50%);
     }
-    margin-bottom: 12.7rem;
 }

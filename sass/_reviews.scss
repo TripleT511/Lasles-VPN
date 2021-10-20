@@ -1,6 +1,34 @@
 .reviews {
     margin-bottom: 20.1rem;
-    .row {
+    //slick
+    .slick-track {
+        display: flex;
+        gap: 0 5rem;
+        margin-left: -3rem;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        z-index: 10;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    .slick-next {
+        right: 0;
+        background: $red;
+    }
+    .slick-prev {
+        right: 8rem;
+        border: 0.2rem solid $red;
+        background: $white;
+        // margin-left: 2rem;
+    }
+    .reviews__list {
         .review__item {
             width: 40rem;
             height: 26rem;
@@ -56,6 +84,9 @@
                 }
             }
             &:hover {
+                border-color: $red;
+            }
+            &.slick-current.slick-active {
                 border-color: $red;
             }
         }

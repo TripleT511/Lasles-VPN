@@ -18,3 +18,11 @@
         gap: 3rem;
     }
 }
+@media screen and (max-width: 1023px) {
+    .nav {
+        padding: 2.5rem 0 6.5rem 0;
+        &__link {
+            display: none;
+        }
+    }
+}
