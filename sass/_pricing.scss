@@ -91,3 +91,21 @@
         
     }
 }
+
+@media screen and (max-width: 768px) {
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .pricing {
+        &__content {
+            height: auto;
+            .col {
+                margin-bottom: 2rem;
+                .item__foot {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

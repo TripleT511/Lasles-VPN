@@ -79,6 +79,12 @@ button {
     flex: 0 0 100%;
     max-width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 .btn {
     display: flex;
@@ -155,10 +161,13 @@ button {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .btn--primary {
         width: 10rem;
         height: 3rem;
+    }
+    .des {
+        padding: 0 !important;
     }
 }
 .title {

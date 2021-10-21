@@ -20,14 +20,14 @@ $('.slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 700,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 580,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

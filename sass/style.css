@@ -412,9 +412,6 @@ button {
   color: #4F5665;
   margin-bottom: 2rem;
 }
-.features__right--list {
-  list-style: none;
-}
 .features__right--list .features__item {
   display: flex;
   align-items: center;
@@ -435,16 +432,26 @@ button {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .features__right {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 3rem;
+  }
+  .features__right--list {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 13rem;
+    flex-direction: column;
+    align-items: center;
   }
   .features__left {
-    max-width: auto;
-    flex-basis: auto;
+    max-width: 100%;
+    flex-basis: 100%;
   }
   .features__left img {
     width: 100%;
@@ -540,6 +547,22 @@ button {
   border-color: #F53838;
 }
 
+@media screen and (max-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .pricing__content {
+    height: auto;
+  }
+  .pricing__content .col {
+    margin-bottom: 2rem;
+  }
+  .pricing__content .col .item__foot {
+    margin-top: 2rem;
+  }
+}
 .testimonials {
   padding-bottom: 5rem;
 }
@@ -566,6 +589,12 @@ button {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1280px) {
+  .testimonials__img img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .reviews {
   margin-bottom: 20.1rem;
 }
@@ -754,6 +783,12 @@ button {
   color: #4F5665;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .wrapper {
   max-width: 1440px;
 }
@@ -792,6 +827,12 @@ button {
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .btn {
   display: flex;
   align-items: center;
@@ -868,10 +909,14 @@ button {
   color: #F53838;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .btn--primary {
     width: 10rem;
     height: 3rem;
+  }
+
+  .des {
+    padding: 0 !important;
   }
 }
 .title {

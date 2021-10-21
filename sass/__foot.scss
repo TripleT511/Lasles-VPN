@@ -99,3 +99,15 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__content {
+        flex-direction: column;
+        justify-content: space-between;
+        .footer__left {
+
+        }
+        }
+    }
+}

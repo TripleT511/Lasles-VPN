@@ -23,3 +23,14 @@
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 1280px) {
+    .testimonials {
+        &__img {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+    }
+    }
+    
+}
