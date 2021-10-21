@@ -36,3 +36,29 @@ $('.slider').slick({
 
     ]
 });
+
+// toggle menu mobile
+
+const menuBtn = document.querySelector(".toggle__btn");
+const navMenu = document.querySelector(".nav__list--mobile");
+const overlay = document.querySelector(".overlay");
+const navItem = document.querySelectorAll(".nav__item");
+const auth = document.querySelectorAll(".nav__auth--mobile .btn");
+
+menuBtn.addEventListener("click", () => {
+    overlay.classList.add("show");
+    navMenu.classList.add("show");
+    navItem.forEach(item => item.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+        overlay.classList.remove("show");
+    }))
+    auth.forEach(item => item.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+        overlay.classList.remove("show");
+    }))
+})
+
+overlay.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+    overlay.classList.remove("show");
+})

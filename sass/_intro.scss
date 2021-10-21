@@ -70,3 +70,61 @@
         transform: translateX(20rem);
     }
 }
+@media screen and (max-width: 993px) {
+    .intro {
+        
+        &__item {
+           border-right: 0.2rem solid $grey;
+        }
+        &__item:last-child {
+            border: none;
+        }
+        &__item:nth-child(1)::after, &__item:nth-child(2):before {
+        display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        &__item {
+            &--content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                p {
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 1.8rem;
+                    line-height: 1.5;
+                }
+            } 
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        &__item {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+           border: none;
+           padding: 2rem;
+           &--icon {
+            width: 5.5rem;
+            height: 5.5rem;
+            margin-right: 0;
+            margin-bottom: 1rem;
+            }
+        }
+    }
+}
