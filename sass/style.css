@@ -163,7 +163,7 @@ button {
 }
 @media screen and (max-width: 576px) {
   .nav__list--mobile {
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 0 1rem;
   }
   .nav__list--mobile .nav__auth--mobile {
     padding-left: 2rem;
