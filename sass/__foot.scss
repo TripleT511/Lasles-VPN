@@ -94,6 +94,13 @@
                     font-weight: 400;
                     line-height: calc(30 / 16);
                     color: $textSecond;
+                    transition: all .3s ease-out;
+                    -moz-transition: all .3s ease-out;
+                    -o-transition: all .3s ease-out;
+                    -webkit-transition: all .3s ease-out;
+                    &:hover {
+                        color: $red;
+                    }
                 }
             }
         }

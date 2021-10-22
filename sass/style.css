@@ -776,6 +776,13 @@ button {
   font-weight: 400;
   line-height: 1.875;
   color: #4F5665;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.footer__content .footer___right ul .footer-item a:hover {
+  color: #F53838;
 }
 
 @media screen and (max-width: 992px) {
