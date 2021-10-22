@@ -102,6 +102,7 @@
             -o-transition: all .3s ease-out;
             -webkit-transition: all .3s ease-out;
             transform: translateX(100% + 70%);
+            overflow: hidden;
             .nav__item {
                 border-radius: 1rem 0 0 1rem;
                     &:not(:last-child):hover {
@@ -127,15 +128,17 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .nav {
+        &__list--mobile {
+            padding: 2.5rem 0 0 2.5rem;
+        }
+    }
+}
 @media screen and (max-width: 576px) {
     .nav {
         &__list--mobile {
-            padding: 2rem 0 0 2rem;
-            .nav__item {
-                .nav__link {
-                    padding: 2rem;
-                }
-            }
+            padding: 2rem 0 0 0;
             .nav__auth--mobile {
                 padding-left: 2rem;
                 gap: 1.5rem;

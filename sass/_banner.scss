@@ -26,33 +26,7 @@
             }
             margin-bottom: 5rem;
         }
-        .btn--rectangle {
-            position: relative;
-            width: 25rem;
-            height: 6rem;
-            background: $red;
-            border-radius: 1rem;
-            cursor: pointer;
-            a {
-                font-weight: 700;
-                color: $white;
-            }
-            &::after {
-                position: absolute;
-                content: "";
-                width: 84.732%;
-                height: 100%;
-                background: rgba(245, 56, 56, 0.35);
-                filter: blur(5.4rem);
-                border-radius: 1rem;
-                transform: translateY(60%);
-                z-index: -1;
-            }
-            transition: all .3s ease-out;
-            -moz-transition: all .3s ease-out;
-            -o-transition: all .3s ease-out;
-            -webkit-transition: all .3s ease-out;
-        }
+        
     }
     margin-bottom: 12.7rem;
 }
@@ -90,10 +64,7 @@
                 margin-bottom: 2.5rem;
                 
             }
-            .btn--rectangle {
-                    width: 20rem;
-                    height: 4.8rem;
-                }
+            
         }
     }
 }

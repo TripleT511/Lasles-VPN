@@ -102,12 +102,47 @@
 
 @media screen and (max-width: 992px) {
     .footer {
-        &__content {
+        &__subs {
         flex-direction: column;
-        justify-content: space-between;
-        .footer__left {
-
+        text-align: center;
+            &--title {
+                margin-bottom: 2rem;
+            }
         }
+        &__content {
+            .footer___right {
+            gap: 6rem;
+            }
         }
     }
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        &__subs {
+        flex-direction: column;
+        text-align: center;
+            &--title span {
+                font-size: 3rem;
+            }
+        }
+        &__content {
+            .footer___right {
+            gap: 3rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer {
+        &__content {
+                flex-direction: column-reverse;
+                gap: 2rem;
+                top: -7.5rem;
+            .footer___right {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+    
 }

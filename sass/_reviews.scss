@@ -29,8 +29,7 @@
     }
     .reviews__list {
         .review__item {
-            width: 40rem;
-            height: 26rem;
+            height: 28rem;
             min-height: 100%;
             background: $white;
             border: 0.2rem solid $grey;
@@ -88,6 +87,34 @@
             &.slick-current.slick-active {
                 border-color: $red;
             }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .reviews {
+        .reviews__list {
+            .review__item {
+                height: auto;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .reviews {
+        margin-bottom: 25rem;
+        .slick-prev {
+            bottom: -15%;
+        }
+        .slick-next {
+            bottom: -15%;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .reviews {
+        .slick-track {
+            gap: 0;
         }
     }
 }

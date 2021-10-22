@@ -131,6 +131,7 @@ button {
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transform: translateX(170%);
+    overflow: hidden;
   }
   .nav__list--mobile .nav__item {
     border-radius: 1rem 0 0 1rem;
@@ -155,12 +156,14 @@ button {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .nav__list--mobile {
+    padding: 2.5rem 0 0 2.5rem;
+  }
+}
 @media screen and (max-width: 576px) {
   .nav__list--mobile {
-    padding: 2rem 0 0 2rem;
-  }
-  .nav__list--mobile .nav__item .nav__link {
-    padding: 2rem;
+    padding: 2rem 0 0 0;
   }
   .nav__list--mobile .nav__auth--mobile {
     padding-left: 2rem;
@@ -198,33 +201,6 @@ button {
 .banner__left--content strong {
   display: inline-block;
 }
-.banner__left .btn--rectangle {
-  position: relative;
-  width: 25rem;
-  height: 6rem;
-  background: #F53838;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-}
-.banner__left .btn--rectangle a {
-  font-weight: 700;
-  color: #fff;
-}
-.banner__left .btn--rectangle::after {
-  position: absolute;
-  content: "";
-  width: 84.732%;
-  height: 100%;
-  background: rgba(245, 56, 56, 0.35);
-  filter: blur(5.4rem);
-  border-radius: 1rem;
-  transform: translateY(60%);
-  z-index: -1;
-}
 
 @media screen and (min-width: 1280px) {
   .banner__right {
@@ -255,10 +231,6 @@ button {
   }
   .banner__left--content {
     margin-bottom: 2.5rem;
-  }
-  .banner__left .btn--rectangle {
-    width: 20rem;
-    height: 4.8rem;
   }
 }
 .intro {
@@ -444,6 +416,9 @@ button {
     flex-basis: 100%;
     padding: 3rem;
   }
+  .features__right--title {
+    font-size: 3rem;
+  }
   .features__right--list {
     display: flex;
     flex-direction: column;
@@ -624,8 +599,7 @@ button {
   background: #fff;
 }
 .reviews .reviews__list .review__item {
-  width: 40rem;
-  height: 26rem;
+  height: 28rem;
   min-height: 100%;
   background: #fff;
   border: 0.2rem solid #DDE0E4;
@@ -683,6 +657,27 @@ button {
   border-color: #F53838;
 }
 
+@media screen and (max-width: 1200px) {
+  .reviews .reviews__list .review__item {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviews {
+    margin-bottom: 25rem;
+  }
+  .reviews .slick-prev {
+    bottom: -15%;
+  }
+  .reviews .slick-next {
+    bottom: -15%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .reviews .slick-track {
+    gap: 0;
+  }
+}
 .footer {
   position: relative;
   width: 100%;
@@ -784,8 +779,37 @@ button {
 }
 
 @media screen and (max-width: 992px) {
-  .footer__content {
+  .footer__subs {
     flex-direction: column;
+    text-align: center;
+  }
+  .footer__subs--title {
+    margin-bottom: 2rem;
+  }
+  .footer__content .footer___right {
+    gap: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__subs {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__subs--title span {
+    font-size: 3rem;
+  }
+  .footer__content .footer___right {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    top: -7.5rem;
+  }
+  .footer__content .footer___right {
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -812,6 +836,17 @@ button {
   padding-right: 2.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .row {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .col {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .col-lg-4 {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
@@ -909,6 +944,40 @@ button {
   color: #F53838;
 }
 
+.btn--rectangle {
+  position: relative;
+  width: 25rem;
+  height: 6rem;
+  background: #F53838;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.btn--rectangle a {
+  font-weight: 700;
+  color: #fff;
+}
+.btn--rectangle::after {
+  position: absolute;
+  content: "";
+  width: 84.732%;
+  height: 100%;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(5.4rem);
+  border-radius: 1rem;
+  transform: translateY(60%);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn--rectangle {
+    width: 20rem;
+    height: 4.8rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .btn--primary {
     width: 10rem;
@@ -927,6 +996,11 @@ button {
   color: #0B132A;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
 .des {
   padding: 0 29rem;
   margin-top: 2rem;
@@ -967,6 +1041,13 @@ button {
   height: 1.5rem;
   background: #F53838;
   border-radius: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-dots {
+    margin-top: 3.25rem;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
