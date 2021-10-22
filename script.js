@@ -3,6 +3,7 @@ const backIcon = '<img src="./images/arrow-back.svg" alt="left">';
 const nextIcon = '<img src="./images/arrow-next.svg" alt="right">';
 $('.slider').slick({
     dots: true,
+    arrows: true,
     infinite: false,
     speed: 300,
     slidesToShow: 3,
