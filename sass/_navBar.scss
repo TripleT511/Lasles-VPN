@@ -77,13 +77,6 @@
                 opacity: 1;
             }
         }
-        @keyframes slidetoLeft {
-            from {
-
-            } to {
-                
-            }
-        }
         &__list--mobile {
             position: fixed;
             width: 70%;
@@ -97,11 +90,12 @@
             display: flex;
             gap: 2rem;
             padding: 5rem 0 0 5rem;
-            transition: all .3s ease-out;
-            -moz-transition: all .3s ease-out;
-            -o-transition: all .3s ease-out;
-            -webkit-transition: all .3s ease-out;
+            transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            -webkit-transition: all .3s linear;
             transform: translateX(100% + 70%);
+            opacity: 0;
             overflow: hidden;
             .nav__item {
                 border-radius: 1rem 0 0 1rem;
@@ -121,6 +115,7 @@
             }
         }
         &__list--mobile.show {
+            opacity: 1;
             transform: translateX(0);
         }
         &__auth {

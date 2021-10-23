@@ -112,7 +112,6 @@ button {
       opacity: 1;
     }
   }
-  @keyframes slidetoLeft {}
   .nav__list--mobile {
     position: fixed;
     width: 70%;
@@ -126,11 +125,12 @@ button {
     display: flex;
     gap: 2rem;
     padding: 5rem 0 0 5rem;
-    transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
     transform: translateX(170%);
+    opacity: 0;
     overflow: hidden;
   }
   .nav__list--mobile .nav__item {
@@ -150,6 +150,7 @@ button {
     gap: 3rem;
   }
   .nav__list--mobile.show {
+    opacity: 1;
     transform: translateX(0);
   }
   .nav__auth {
